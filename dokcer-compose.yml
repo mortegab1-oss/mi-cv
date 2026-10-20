@@ -1,0 +1,12 @@
+services:
+ frontend:
+ build: .
+ container_name: cv-frontend
+ restart: always
+ ports:
+ - "80:80"
+ networks:
+ - red-cv
+networks:
+ red-cv:
+ external: true
