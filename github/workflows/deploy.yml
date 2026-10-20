@@ -9,6 +9,6 @@ jobs:
  - name: Descargar cambios del repositorio
  uses: actions/checkout@v4
  - name: Reconstruir y levantar contenedores
- run: |
+ run: self-hosted
  docker compose down --remove-orphans
  docker compose up -d --build
