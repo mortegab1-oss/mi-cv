@@ -1,5 +1,5 @@
-name: Despliegue Continuo Homelab
-on:
+ name: Despliegue Continuo Homelab
+ on:
  push:
  branches: main
  jobs:
