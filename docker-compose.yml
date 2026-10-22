@@ -1,7 +1,7 @@
 services:
  frontend:
  build: .
- container_name: mi-cv
+ container_name: cv-frontend
  restart: always
  ports:
  - "80:80"
