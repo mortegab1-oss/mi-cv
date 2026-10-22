@@ -8,5 +8,5 @@ services:
  networks:
  - red-cv
 networks:
- red-cv:
+ red-cv: 
  external: true
