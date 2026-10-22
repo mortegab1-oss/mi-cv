@@ -7,7 +7,7 @@
  runs-on: [self-hosted, Linux, X64]
  steps:
  - name: Descargar cambios del repositorio
- uses: actions/checkout@v4
+  uses: actions/checkout@v4
  - name: Reconstruir y levantar contenedores
  run: |
  docker compose down --remove-orphans
