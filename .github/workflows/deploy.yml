@@ -1,7 +1,7 @@
 name: Despliegue Continuo Homelab
 on:
   push:
-    branches: git@github.com-mortegab1-oss/mi-cv.git
+    branches: [ "main" ]
 jobs:
   deploy:
     runs-on: self-hosted
