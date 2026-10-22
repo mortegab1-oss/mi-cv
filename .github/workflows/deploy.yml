@@ -4,7 +4,7 @@ on:
  branches: git@github.com-mortegab1-oss/mi-cv.git
 jobs:
  deploy:
- runs-on: self-hosted
+ runs-on: [self-hosted, Linux, X64]
  steps:
  - name: Descargar cambios del repositorio
  uses: actions/checkout@v4

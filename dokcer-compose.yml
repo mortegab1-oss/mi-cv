@@ -7,6 +7,6 @@ services:
  - "80:80"
  networks:
  - red-cv
-networks:
+networks: 
  red-cv: 
  external: true
