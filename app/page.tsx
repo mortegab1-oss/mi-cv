@@ -13,8 +13,29 @@ export default function Home() {
 
         <div className="max-w-5xl w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
           
-          {/* Columna de Texto */}
-          <div className="md:col-span-7 space-y-6 text-center md:text-left">
+          {/* Columna de la Foto de Perfil (En móvil aparece PRIMERO con order-1, en PC a la derecha con md:order-2) */}
+          <div className="md:col-span-5 flex justify-center order-1 md:order-2">
+            <div className="relative group">
+              
+              {/* Marco con degradado */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+              
+              {/* Contenedor de la imagen */}
+              <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-3xl overflow-hidden border border-slate-700/80 bg-slate-900 shadow-2xl">
+                <Image 
+                  src="/perfil.jpeg" 
+                  alt="Foto de perfil de Marlon" 
+                  fill
+                  priority
+                  className="object-cover object-center group-hover:scale-105 transition duration-500"
+                />
+              </div>
+
+            </div>
+          </div>
+
+          {/* Columna de Texto (En móvil aparece DESPUÉS con order-2, en PC a la izquierda con md:order-1) */}
+          <div className="md:col-span-7 space-y-6 text-center md:text-left order-2 md:order-1">
             
             {/* Badge superior */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 text-xs font-medium text-emerald-400 backdrop-blur-md">
@@ -65,27 +86,6 @@ export default function Home() {
 
           </div>
 
-          {/* Columna de la Foto de Perfil */}
-          <div className="md:col-span-5 flex justify-center">
-            <div className="relative group">
-              
-              {/* Marco con degradado */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
-              
-              {/* Contenedor de la imagen */}
-              <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border border-slate-700/80 bg-slate-900 shadow-2xl">
-                <Image 
-                  src="/perfil.jpeg" 
-                  alt="Foto de perfil de Marlon" 
-                  fill
-                  priority
-                  className="object-cover object-center group-hover:scale-105 transition duration-500"
-                />
-              </div>
-
-            </div>
-          </div>
-
         </div>
       </section>
 
@@ -124,9 +124,9 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
               { category: "Sistemas & SO", items: ["Linux (CachyOS)", "Ubuntu", "Git / Terminal"] },
-              { category: "Lenguajes", items: ["Python", "Java"] },
-              { category: "Bases de Datos", items: [ "SIGSAWEB"] },
-              { category: "Hardware / IoT", items: ["Mantenimiento PC"] },
+              { category: "Lenguajes", items: ["Python", "Java", "C#", "TypeScript"] },
+              { category: "Bases de Datos", items: ["MySQL", "MySQL Workbench", "SIGSAWEB"] },
+              { category: "Hardware / IoT", items: ["ESP32", "Microcontroladores", "Mantenimiento PC"] },
             ].map((tech, index) => (
               <div key={index} className="p-5 rounded-xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700 transition-all duration-300">
                 <h3 className="text-emerald-400 font-semibold text-sm mb-3 font-mono">{tech.category}</h3>
