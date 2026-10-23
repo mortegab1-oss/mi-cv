@@ -100,8 +100,8 @@ export default function Home() {
             <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-emerald-400 to-cyan-400"></div>
 
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 font-mono text-sm">
-                ~/sobre-mi
+              <div className="p-2 rounded-lg bg-emerald-400 text-emerald-400 font-mono text-sm">
+                
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">Acerca de mí</h2>
             </div>
@@ -115,8 +115,8 @@ export default function Home() {
         {/* ================= 3. SECCIÓN: TECH STACK / HABILIDADES ================= */}
         <section id="habilidades" className="max-w-4xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 font-mono text-sm">
-              ~/tech-stack
+            <div className="p-2 rounded-lg bg-cyan-400 text-cyan-400 font-mono text-sm">
+              
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">Habilidades & Tecnologías</h2>
           </div>
@@ -146,8 +146,8 @@ export default function Home() {
         {/* ================= 4. SECCIÓN: LOGROS Y TRAYECTORIA ================= */}
         <section id="logros" className="max-w-4xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 font-mono text-sm">
-              ~/experiencia-logros
+            <div className="p-2 rounded-lg bg-emerald-500 text-emerald-400 font-mono text-sm">
+              
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">Logros & Trayectoria</h2>
           </div>
