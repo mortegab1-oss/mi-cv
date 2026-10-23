@@ -124,9 +124,9 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
               { category: "Sistemas & SO", items: ["Linux (CachyOS)", "Ubuntu", "Git / Terminal"] },
-              { category: "Lenguajes", items: ["Python", "Java", "C#", "TypeScript"] },
-              { category: "Bases de Datos", items: ["MySQL", "MySQL Workbench", "SIGSAWEB"] },
-              { category: "Hardware / IoT", items: ["ESP32", "Microcontroladores", "Mantenimiento PC"] },
+              { category: "Lenguajes", items: ["Python", "Java"] },
+              { category: "Bases de Datos", items: ["SIGSAWEB"] },
+              { category: "Hardware / IoT", items: ["Mantenimiento PC"] },
             ].map((tech, index) => (
               <div key={index} className="p-5 rounded-xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700 transition-all duration-300">
                 <h3 className="text-emerald-400 font-semibold text-sm mb-3 font-mono">{tech.category}</h3>
